@@ -93,7 +93,6 @@
 				0241A2721C56A651007DC08D /* MVC */,
 				0241A2611C54E5E2007DC08D /* Main.storyboard */,
 				0241A2671C54E5E2007DC08D /* Assets.xcassets */,
-				0241A2691C54E5E2007DC08D /* LaunchScreen.storyboard */,
 				0241A26C1C54E5E2007DC08D /* Info.plist */,
 			);
 			path = ulyanovsk;
@@ -103,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				0241A2761C56A917007DC08D /* Controllers */,
+				0241A28F1C56AE6C007DC08D /* Views */,
 				0241A2731C56A658007DC08D /* Models */,
 			);
 			name = MVC;
@@ -139,6 +139,14 @@
 				0241A25F1C54E5E2007DC08D /* ViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0241A28F1C56AE6C007DC08D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0241A2691C54E5E2007DC08D /* LaunchScreen.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		032615A521693C7CAC12DDA8 /* Pods */ = {
