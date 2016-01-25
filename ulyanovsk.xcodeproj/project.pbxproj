@@ -13,6 +13,15 @@
 		0241A2661C54E5E2007DC08D /* ulyanovsk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2641C54E5E2007DC08D /* ulyanovsk.xcdatamodeld */; };
 		0241A2681C54E5E2007DC08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0241A2671C54E5E2007DC08D /* Assets.xcassets */; };
 		0241A26B1C54E5E2007DC08D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0241A2691C54E5E2007DC08D /* LaunchScreen.storyboard */; };
+		0241A2751C56A6D1007DC08D /* ArrayValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2741C56A6D1007DC08D /* ArrayValueTransformer.swift */; };
+		0241A2871C56AAFD007DC08D /* Hotel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2781C56AAFD007DC08D /* Hotel+CoreDataProperties.m */; };
+		0241A2881C56AAFD007DC08D /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0241A27A1C56AAFD007DC08D /* Hotel.m */; };
+		0241A2891C56AAFD007DC08D /* Showplace+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0241A27C1C56AAFD007DC08D /* Showplace+CoreDataProperties.m */; };
+		0241A28A1C56AAFD007DC08D /* Showplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 0241A27E1C56AAFD007DC08D /* Showplace.m */; };
+		0241A28B1C56AAFD007DC08D /* Place+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2801C56AAFD007DC08D /* Place+CoreDataProperties.m */; };
+		0241A28C1C56AAFD007DC08D /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2821C56AAFD007DC08D /* Place.m */; };
+		0241A28D1C56AAFD007DC08D /* Review+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2841C56AAFD007DC08D /* Review+CoreDataProperties.m */; };
+		0241A28E1C56AAFD007DC08D /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2861C56AAFD007DC08D /* Review.m */; };
 		C0B8F69045AAF39B9EB8AA6D /* libPods-ulyanovsk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E01C107E466BB21FE33CE225 /* libPods-ulyanovsk.a */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +34,23 @@
 		0241A2671C54E5E2007DC08D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0241A26A1C54E5E2007DC08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0241A26C1C54E5E2007DC08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0241A2741C56A6D1007DC08D /* ArrayValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayValueTransformer.swift; path = MVC/Models/ArrayValueTransformer.swift; sourceTree = "<group>"; };
+		0241A2771C56AAFD007DC08D /* Hotel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Hotel+CoreDataProperties.h"; path = "MVC/Models/Hotel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0241A2781C56AAFD007DC08D /* Hotel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Hotel+CoreDataProperties.m"; path = "MVC/Models/Hotel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0241A2791C56AAFD007DC08D /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hotel.h; path = MVC/Models/Hotel.h; sourceTree = "<group>"; };
+		0241A27A1C56AAFD007DC08D /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hotel.m; path = MVC/Models/Hotel.m; sourceTree = "<group>"; };
+		0241A27B1C56AAFD007DC08D /* Showplace+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Showplace+CoreDataProperties.h"; path = "MVC/Models/Showplace+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0241A27C1C56AAFD007DC08D /* Showplace+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Showplace+CoreDataProperties.m"; path = "MVC/Models/Showplace+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0241A27D1C56AAFD007DC08D /* Showplace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Showplace.h; path = MVC/Models/Showplace.h; sourceTree = "<group>"; };
+		0241A27E1C56AAFD007DC08D /* Showplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Showplace.m; path = MVC/Models/Showplace.m; sourceTree = "<group>"; };
+		0241A27F1C56AAFD007DC08D /* Place+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Place+CoreDataProperties.h"; path = "MVC/Models/Place+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0241A2801C56AAFD007DC08D /* Place+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Place+CoreDataProperties.m"; path = "MVC/Models/Place+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0241A2811C56AAFD007DC08D /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Place.h; path = MVC/Models/Place.h; sourceTree = "<group>"; };
+		0241A2821C56AAFD007DC08D /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Place.m; path = MVC/Models/Place.m; sourceTree = "<group>"; };
+		0241A2831C56AAFD007DC08D /* Review+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Review+CoreDataProperties.h"; path = "MVC/Models/Review+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0241A2841C56AAFD007DC08D /* Review+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Review+CoreDataProperties.m"; path = "MVC/Models/Review+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0241A2851C56AAFD007DC08D /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Review.h; path = MVC/Models/Review.h; sourceTree = "<group>"; };
+		0241A2861C56AAFD007DC08D /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Review.m; path = MVC/Models/Review.m; sourceTree = "<group>"; };
 		6478210EB548031887974DBF /* Pods-ulyanovsk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ulyanovsk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ulyanovsk/Pods-ulyanovsk.debug.xcconfig"; sourceTree = "<group>"; };
 		729999FE1D0CD0EBA52C372F /* Pods-ulyanovsk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ulyanovsk.release.xcconfig"; path = "Pods/Target Support Files/Pods-ulyanovsk/Pods-ulyanovsk.release.xcconfig"; sourceTree = "<group>"; };
 		E01C107E466BB21FE33CE225 /* libPods-ulyanovsk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ulyanovsk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,14 +90,55 @@
 			isa = PBXGroup;
 			children = (
 				0241A25D1C54E5E2007DC08D /* AppDelegate.swift */,
-				0241A25F1C54E5E2007DC08D /* ViewController.swift */,
+				0241A2721C56A651007DC08D /* MVC */,
 				0241A2611C54E5E2007DC08D /* Main.storyboard */,
 				0241A2671C54E5E2007DC08D /* Assets.xcassets */,
 				0241A2691C54E5E2007DC08D /* LaunchScreen.storyboard */,
 				0241A26C1C54E5E2007DC08D /* Info.plist */,
-				0241A2641C54E5E2007DC08D /* ulyanovsk.xcdatamodeld */,
 			);
 			path = ulyanovsk;
+			sourceTree = "<group>";
+		};
+		0241A2721C56A651007DC08D /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				0241A2761C56A917007DC08D /* Controllers */,
+				0241A2731C56A658007DC08D /* Models */,
+			);
+			name = MVC;
+			sourceTree = "<group>";
+		};
+		0241A2731C56A658007DC08D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0241A2771C56AAFD007DC08D /* Hotel+CoreDataProperties.h */,
+				0241A2781C56AAFD007DC08D /* Hotel+CoreDataProperties.m */,
+				0241A2791C56AAFD007DC08D /* Hotel.h */,
+				0241A27A1C56AAFD007DC08D /* Hotel.m */,
+				0241A27B1C56AAFD007DC08D /* Showplace+CoreDataProperties.h */,
+				0241A27C1C56AAFD007DC08D /* Showplace+CoreDataProperties.m */,
+				0241A27D1C56AAFD007DC08D /* Showplace.h */,
+				0241A27E1C56AAFD007DC08D /* Showplace.m */,
+				0241A27F1C56AAFD007DC08D /* Place+CoreDataProperties.h */,
+				0241A2801C56AAFD007DC08D /* Place+CoreDataProperties.m */,
+				0241A2811C56AAFD007DC08D /* Place.h */,
+				0241A2821C56AAFD007DC08D /* Place.m */,
+				0241A2831C56AAFD007DC08D /* Review+CoreDataProperties.h */,
+				0241A2841C56AAFD007DC08D /* Review+CoreDataProperties.m */,
+				0241A2851C56AAFD007DC08D /* Review.h */,
+				0241A2861C56AAFD007DC08D /* Review.m */,
+				0241A2641C54E5E2007DC08D /* ulyanovsk.xcdatamodeld */,
+				0241A2741C56A6D1007DC08D /* ArrayValueTransformer.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0241A2761C56A917007DC08D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0241A25F1C54E5E2007DC08D /* ViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		032615A521693C7CAC12DDA8 /* Pods */ = {
@@ -213,8 +280,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0241A2881C56AAFD007DC08D /* Hotel.m in Sources */,
 				0241A2601C54E5E2007DC08D /* ViewController.swift in Sources */,
+				0241A2751C56A6D1007DC08D /* ArrayValueTransformer.swift in Sources */,
+				0241A28B1C56AAFD007DC08D /* Place+CoreDataProperties.m in Sources */,
 				0241A2661C54E5E2007DC08D /* ulyanovsk.xcdatamodeld in Sources */,
+				0241A28E1C56AAFD007DC08D /* Review.m in Sources */,
+				0241A28C1C56AAFD007DC08D /* Place.m in Sources */,
+				0241A28D1C56AAFD007DC08D /* Review+CoreDataProperties.m in Sources */,
+				0241A28A1C56AAFD007DC08D /* Showplace.m in Sources */,
+				0241A2871C56AAFD007DC08D /* Hotel+CoreDataProperties.m in Sources */,
+				0241A2891C56AAFD007DC08D /* Showplace+CoreDataProperties.m in Sources */,
 				0241A25E1C54E5E2007DC08D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
