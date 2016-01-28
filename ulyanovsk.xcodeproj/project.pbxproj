@@ -12,6 +12,7 @@
 		022BDBAB1C5A44FE00540B7B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BDBAA1C5A44FE00540B7B /* MainViewController.swift */; };
 		022BDBAD1C5A451A00540B7B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BDBAC1C5A451A00540B7B /* ListViewController.swift */; };
 		022BDBAF1C5A456100540B7B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BDBAE1C5A456100540B7B /* MapViewController.swift */; };
+		022BDBB31C5A6A9800540B7B /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BDBB21C5A6A9800540B7B /* BackendService.swift */; };
 		0241A25E1C54E5E2007DC08D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A25D1C54E5E2007DC08D /* AppDelegate.swift */; };
 		0241A2631C54E5E2007DC08D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0241A2611C54E5E2007DC08D /* Main.storyboard */; };
 		0241A2661C54E5E2007DC08D /* ulyanovsk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2641C54E5E2007DC08D /* ulyanovsk.xcdatamodeld */; };
@@ -37,6 +38,7 @@
 		022BDBAA1C5A44FE00540B7B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = MVC/Controllers/MainViewController.swift; sourceTree = "<group>"; };
 		022BDBAC1C5A451A00540B7B /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = MVC/Controllers/ListViewController.swift; sourceTree = "<group>"; };
 		022BDBAE1C5A456100540B7B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = MVC/Controllers/MapViewController.swift; sourceTree = "<group>"; };
+		022BDBB21C5A6A9800540B7B /* BackendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackendService.swift; path = Services/BackendService.swift; sourceTree = "<group>"; };
 		0241A25A1C54E5E2007DC08D /* ulyanovsk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ulyanovsk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0241A25D1C54E5E2007DC08D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0241A2621C54E5E2007DC08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +91,22 @@
 			name = ABStickyHeaderTableView;
 			sourceTree = "<group>";
 		};
+		022BDBB01C5A6A6F00540B7B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				022BDBB11C5A6A7F00540B7B /* BackendService */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		022BDBB11C5A6A7F00540B7B /* BackendService */ = {
+			isa = PBXGroup;
+			children = (
+				022BDBB21C5A6A9800540B7B /* BackendService.swift */,
+			);
+			name = BackendService;
+			sourceTree = "<group>";
+		};
 		0241A2511C54E5E2007DC08D = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +128,7 @@
 		0241A25C1C54E5E2007DC08D /* ulyanovsk */ = {
 			isa = PBXGroup;
 			children = (
+				022BDBB01C5A6A6F00540B7B /* Services */,
 				022BDBA01C5A3F7900540B7B /* Libraries */,
 				0241A25D1C54E5E2007DC08D /* AppDelegate.swift */,
 				0241A2721C56A651007DC08D /* MVC */,
@@ -325,6 +344,7 @@
 				0241A2B11C56C2FE007DC08D /* Review+CoreDataProperties.swift in Sources */,
 				0241A2B21C56C2FE007DC08D /* Review.swift in Sources */,
 				022BDBAB1C5A44FE00540B7B /* MainViewController.swift in Sources */,
+				022BDBB31C5A6A9800540B7B /* BackendService.swift in Sources */,
 				0241A2AC1C56C2FE007DC08D /* Place.swift in Sources */,
 				0241A2AD1C56C2FE007DC08D /* Showplace+CoreDataProperties.swift in Sources */,
 				0241A25E1C54E5E2007DC08D /* AppDelegate.swift in Sources */,
