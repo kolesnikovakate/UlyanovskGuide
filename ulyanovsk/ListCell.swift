@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlaceCell: UITableViewCell {
+class ListCell: UITableViewCell {
     
     @IBOutlet weak var placeImageView: UIImageView!
     @IBOutlet weak var placeTitleLabel: UILabel!
