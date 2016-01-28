@@ -3,3 +3,4 @@
 //
 
 #import "UIImageView+WebCache.h"
+#import <GoogleMaps/GoogleMaps.h>

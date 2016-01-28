@@ -479,8 +479,45 @@
                     <view key="view" contentMode="scaleToFill" id="Y2R-t7-87r">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06g-Gw-CLs" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6OR-Gi-6em" firstAttribute="top" secondItem="06g-Gw-CLs" secondAttribute="bottom" id="L1F-Fq-R1D"/>
+                            <constraint firstItem="06g-Gw-CLs" firstAttribute="top" secondItem="ZlF-AL-Fe8" secondAttribute="bottom" id="Llk-4Z-LWI"/>
+                            <constraint firstItem="06g-Gw-CLs" firstAttribute="leading" secondItem="Y2R-t7-87r" secondAttribute="leading" id="LtH-aW-9Oo"/>
+                            <constraint firstAttribute="trailing" secondItem="06g-Gw-CLs" secondAttribute="trailing" id="ukt-ua-CUM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="06g-Gw-CLs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Llk-4Z-LWI"/>
+                                <exclude reference="LtH-aW-9Oo"/>
+                                <exclude reference="ukt-ua-CUM"/>
+                                <exclude reference="L1F-Fq-R1D"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="06g-Gw-CLs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Llk-4Z-LWI"/>
+                                <include reference="LtH-aW-9Oo"/>
+                                <include reference="ukt-ua-CUM"/>
+                                <include reference="L1F-Fq-R1D"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="viewMap" destination="06g-Gw-CLs" id="MVN-3N-u3v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yss-4T-bEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
