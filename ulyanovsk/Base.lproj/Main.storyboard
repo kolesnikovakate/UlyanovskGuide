@@ -484,9 +484,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SHW-hh-xek">
+                                <rect key="frame" x="-60" y="-14" width="121" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="0.55000000000000004" colorSpace="calibratedWhite"/>
+                                <segments>
+                                    <segment title="Все"/>
+                                    <segment title="Достопримечательности"/>
+                                    <segment title="Гостиницы"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SHW-hh-xek" firstAttribute="centerX" secondItem="Y2R-t7-87r" secondAttribute="centerX" id="4mX-mw-Hcq"/>
+                            <constraint firstItem="SHW-hh-xek" firstAttribute="top" secondItem="ZlF-AL-Fe8" secondAttribute="bottom" constant="8" id="HiL-Rk-8Z8"/>
                             <constraint firstItem="6OR-Gi-6em" firstAttribute="top" secondItem="06g-Gw-CLs" secondAttribute="bottom" id="L1F-Fq-R1D"/>
                             <constraint firstItem="06g-Gw-CLs" firstAttribute="top" secondItem="ZlF-AL-Fe8" secondAttribute="bottom" id="Llk-4Z-LWI"/>
                             <constraint firstItem="06g-Gw-CLs" firstAttribute="leading" secondItem="Y2R-t7-87r" secondAttribute="leading" id="LtH-aW-9Oo"/>
@@ -495,27 +506,34 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="06g-Gw-CLs"/>
+                                <exclude reference="SHW-hh-xek"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Llk-4Z-LWI"/>
                                 <exclude reference="LtH-aW-9Oo"/>
                                 <exclude reference="ukt-ua-CUM"/>
+                                <exclude reference="4mX-mw-Hcq"/>
+                                <exclude reference="HiL-Rk-8Z8"/>
                                 <exclude reference="L1F-Fq-R1D"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="06g-Gw-CLs"/>
+                                <include reference="SHW-hh-xek"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Llk-4Z-LWI"/>
                                 <include reference="LtH-aW-9Oo"/>
                                 <include reference="ukt-ua-CUM"/>
+                                <include reference="4mX-mw-Hcq"/>
+                                <include reference="HiL-Rk-8Z8"/>
                                 <include reference="L1F-Fq-R1D"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="segmentedControl" destination="SHW-hh-xek" id="F0o-iR-vOb"/>
                         <outlet property="viewMap" destination="06g-Gw-CLs" id="MVN-3N-u3v"/>
                     </connections>
                 </viewController>
@@ -531,6 +549,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="iKf-8H-Y8z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.25882352939999997" green="0.52156862749999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
