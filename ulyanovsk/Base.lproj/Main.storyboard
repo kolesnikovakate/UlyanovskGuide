@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zw5-Ch-VV3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zw5-Ch-VV3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -26,15 +26,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBX-8p-HcE">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ig4-Oj-K9B">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ig4-Oj-K9B">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Достопримечательности"/>
+                                        <connections>
+                                            <action selector="openListVCAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Rf-Ns-huJ"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJf-y9-M7v">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJf-y9-M7v">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Гостиницы"/>
+                                        <connections>
+                                            <action selector="openListVCAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQt-3b-lh3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HY5-CK-M6L">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -461,7 +467,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="BHl-es-kf3" kind="show" id="pXX-ny-BlB"/>
+                        <segue destination="BHl-es-kf3" kind="show" identifier="openDetailVC" id="pXX-ny-BlB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yGR-RH-TR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -509,12 +515,12 @@
                                 <exclude reference="SHW-hh-xek"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="L1F-Fq-R1D"/>
+                                <exclude reference="4mX-mw-Hcq"/>
+                                <exclude reference="HiL-Rk-8Z8"/>
                                 <exclude reference="Llk-4Z-LWI"/>
                                 <exclude reference="LtH-aW-9Oo"/>
                                 <exclude reference="ukt-ua-CUM"/>
-                                <exclude reference="4mX-mw-Hcq"/>
-                                <exclude reference="HiL-Rk-8Z8"/>
-                                <exclude reference="L1F-Fq-R1D"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -523,12 +529,12 @@
                                 <include reference="SHW-hh-xek"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="L1F-Fq-R1D"/>
+                                <include reference="4mX-mw-Hcq"/>
+                                <include reference="HiL-Rk-8Z8"/>
                                 <include reference="Llk-4Z-LWI"/>
                                 <include reference="LtH-aW-9Oo"/>
                                 <include reference="ukt-ua-CUM"/>
-                                <include reference="4mX-mw-Hcq"/>
-                                <include reference="HiL-Rk-8Z8"/>
-                                <include reference="L1F-Fq-R1D"/>
                             </mask>
                         </variation>
                     </view>
@@ -564,7 +570,7 @@
         <!--Details View Controller-->
         <scene sceneID="s93-3Q-ruP">
             <objects>
-                <tableViewController automaticallyAdjustsScrollViewInsets="NO" id="BHl-es-kf3" customClass="DetailsViewController" customModule="ulyanovsk" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DetailsVC" automaticallyAdjustsScrollViewInsets="NO" id="BHl-es-kf3" customClass="DetailsViewController" customModule="ulyanovsk" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="5n3-d7-KPI" customClass="ABStickyHeaderTableView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -651,7 +657,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="567" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Переход" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f4-MI-1vp">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Переход" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f4-MI-1vp">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

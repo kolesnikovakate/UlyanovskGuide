@@ -15,4 +15,16 @@ class MainViewController: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "openListVC" {
+            guard let button = sender as? UIButton else { return }
+            guard let controller = segue.destinationViewController as? ListViewController else { return }
+            controller.isShowplace = button.tag == 1;
+        }
+        
+    }
+    
+    @IBAction func openListVCAction(sender: UIButton) {
+        self.performSegueWithIdentifier("openListVC", sender: sender)
+    }
 }

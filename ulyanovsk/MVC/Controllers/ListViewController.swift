@@ -10,6 +10,8 @@ import UIKit
 
 class ListViewController: UITableViewController {
 
+    var isShowplace: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -35,6 +37,14 @@ class ListViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        
+        self.openDetailVCWithIndexPath(indexPath)
     }
+    
+    func openDetailVCWithIndexPath(indexPath: NSIndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = storyboard.instantiateViewControllerWithIdentifier("DetailsVC") as? DetailsViewController else { return }
+        //тут установка модели для деталей
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
