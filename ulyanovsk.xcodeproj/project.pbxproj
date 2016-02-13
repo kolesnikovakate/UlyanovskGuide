@@ -178,9 +178,9 @@
 			children = (
 				022BDBAA1C5A44FE00540B7B /* MainViewController.swift */,
 				022BDBAC1C5A451A00540B7B /* ListViewController.swift */,
-				022BDBAE1C5A456100540B7B /* MapViewController.swift */,
 				02C2F4371C6F939B00B41F8E /* DetailsViewController.h */,
 				02C2F4381C6F939B00B41F8E /* DetailsViewController.m */,
+				022BDBAE1C5A456100540B7B /* MapViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";

@@ -616,13 +616,13 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" text="Заголовок" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="400" translatesAutoresizingMaskIntoConstraints="NO" id="9HE-nU-HBT">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" text="Заголовок" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HE-nU-HBT">
                                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" text="Текст описания" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="400" translatesAutoresizingMaskIntoConstraints="NO" id="f83-Tp-FtV">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст описания" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f83-Tp-FtV">
                                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -649,7 +649,6 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="openReviews:" destination="643-qI-tOp" eventType="touchUpInside" id="bjM-NO-8DQ"/>
                                                     <action selector="showReviews:" destination="643-qI-tOp" eventType="touchUpInside" id="YqK-my-MML"/>
                                                 </connections>
                                             </button>
@@ -674,7 +673,6 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="openMap:" destination="643-qI-tOp" eventType="touchUpInside" id="xQe-gO-33D"/>
                                                     <action selector="showMap:" destination="643-qI-tOp" eventType="touchUpInside" id="sAV-wU-gF4"/>
                                                 </connections>
                                             </button>
