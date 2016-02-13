@@ -94,39 +94,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         managedObjectContext.persistentStoreCoordinator = coordinator
         return managedObjectContext
     }()
-    
-    func createHardcoreRewiews() {
-        MagicalRecord.saveWithBlock { (localContext) -> Void in
-            let array = [] as NSMutableArray
-            var dic = ["name" : "Катя",
-                "text" : "Были там в начале лета, очень понравилось! ",
-                "date" : "2015-06-12"];
-            array.addObject(dic)
-            dic = ["name" : "Артем",
-                "text" : "Не впечатлило, только время зря потратили.",
-                "date" : "2015-07-13"];
-            array.addObject(dic)
-            dic = ["name" : "Денис",
-                "text" : "Не люблю писать отзывы, но это место реально понравилось, рекомендую!",
-                "date" : "2016-02-13"];
-            array.addObject(dic)
-            dic = ["name" : "Павел",
-                "text" : "+1",
-                "date" : "2015-12-03"];
-            array.addObject(dic)
-            dic = ["name" : "Маша",
-                "text" : "Не впечатлило.",
-                "date" : "2015-07-13"];
-            array.addObject(dic)
-            dic = ["name" : "Олег",
-                "text" : "советую посетить!",
-                "date" : "2015-11-30"];
-            array.addObject(dic)
-            
-            FEMManagedObjectDeserializer.deserializeCollectionExternalRepresentation(array as [AnyObject],
-                usingMapping: DataMapping.reviewsMapping(), context: localContext)
-        }
-    }
 
     // MARK: - Core Data Saving support
 

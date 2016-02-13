@@ -14,6 +14,8 @@ class ListViewController: UITableViewController, NSFetchedResultsControllerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        self.title = isShowplace ? "Достопримечательности" : "Гостиницы";
     }
     
     lazy var frc: NSFetchedResultsController = {
@@ -60,7 +62,15 @@ class ListViewController: UITableViewController, NSFetchedResultsControllerDeleg
         infoLabel.text = place.info;
         
         let imageView = cell.viewWithTag(3) as! UIImageView
-        imageView.sd_setImageWithURL(NSURL(string: "http://arcane-brook-20885.herokuapp.com/\(place.image!)"), placeholderImage: UIImage(named: "placeholder"))
+        imageView.sd_setImageWithURL(NSURL(string: "https://arcane-brook-20885.herokuapp.com/\(place.image!)"), placeholderImage: UIImage(named: "placeholder"))
+        
+        
+        let ratingLabel = cell.viewWithTag(4) as! UILabel
+        let rating = Int(arc4random_uniform(UInt32(10 + 1)))
+        ratingLabel.text = "\(rating)";
+        
+        let reviewsLabel = cell.viewWithTag(5) as! UILabel
+        reviewsLabel.text = self.relativeTimeWithPlural((place.reviews?.count)!);
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -71,8 +81,13 @@ class ListViewController: UITableViewController, NSFetchedResultsControllerDeleg
     func openDetailVCWithIndexPath(indexPath: NSIndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let vc = storyboard.instantiateViewControllerWithIdentifier("DetailsVC") as? DetailsViewController else { return }
-        //тут установка модели для деталей
+        vc.place = frc.objectAtIndexPath(indexPath) as! Place
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    func relativeTimeWithPlural(num : Int) -> String {
+        let forms = [ "отзыв", "отзыва", "отзывов" ]
+        let plural = num % 10 == 1 && num % 100 != 11 ? forms[0] : (num % 10 >= 2 && num % 10 <= 4 && (num % 100 < 10 || num % 100 >= 20) ? forms[1] : forms[2]);
+        return "\(num) \(plural)";
+    }
 }

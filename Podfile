@@ -15,9 +15,6 @@ pod 'AFNetworking'
 pod 'SDWebImage'
 #3.7.3
 
-pod 'UITableView+FDTemplateLayoutCell'
-#1.3
-
 pod 'GoogleMaps', '1.11.1'
 
 inhibit_all_warnings!

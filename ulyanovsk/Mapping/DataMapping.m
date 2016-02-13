@@ -32,6 +32,7 @@
     [dateFormatter setTimeZone:[NSTimeZone localTimeZone]];
     
     return [FEMManagedObjectMapping mappingForEntityName:@"Review" configuration:^(FEMManagedObjectMapping *sender) {
+        [sender setPrimaryKey:@"text"];
         [sender addAttributesFromDictionary:@{@"name" : @"name",
                                               @"text" : @"text"
                                               }];
