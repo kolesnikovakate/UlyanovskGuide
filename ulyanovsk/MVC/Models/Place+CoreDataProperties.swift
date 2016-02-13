@@ -18,7 +18,7 @@ extension Place {
     @NSManaged var lon: NSNumber?
     @NSManaged var title: String?
     @NSManaged var info: String?
-    @NSManaged var photos: NSObject?
+    @NSManaged var image: String?
     @NSManaged var rating: NSNumber?
     @NSManaged var reviews: NSSet?
 

@@ -8,13 +8,23 @@
 
 import UIKit
 
-class ListViewController: UITableViewController {
+class ListViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
     var isShowplace: Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    lazy var frc: NSFetchedResultsController = {
+        return Showplace.MR_fetchAllSortedBy(
+            "title",
+            ascending: true,
+            withPredicate: nil,
+            groupBy: nil,
+            delegate: self
+        )
+    }()
     
     // MARK: - Table view data source
     
@@ -23,7 +33,7 @@ class ListViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return (frc.fetchedObjects?.count)!
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -33,6 +43,14 @@ class ListViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        let place : Place = frc.objectAtIndexPath(indexPath) as! Place
+        let titleLabel = cell.viewWithTag(1) as! UILabel
+        titleLabel.text = place.title;
+        let infoLabel = cell.viewWithTag(2) as! UILabel
+        infoLabel.text = place.info;
+        
+        let imageView = cell.viewWithTag(3) as! UIImageView
+        imageView.sd_setImageWithURL(NSURL(string: place.image!), placeholderImage: UIImage(named: "placeholder"))
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

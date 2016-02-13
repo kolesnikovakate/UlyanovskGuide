@@ -29,12 +29,10 @@ class ListCell: UITableViewCell {
         self.placeInfoLabel.text = place.info
         self.placeRatingLabel.text = "\(place.rating)"
         self.placeReviewsLabel.text = relativeTimeWithPlural(place.reviews!.count)
-        if let photos = place.photos as! NSArray? {
-            let url : NSURL = NSURL(string: photos.firstObject as! String)!
+        let url : NSURL = NSURL(string: place.image!)!
         self.placeImageView.sd_setImageWithURL(url, placeholderImage: UIImage(named: "placeholder"))
-        }
     }
-    
+
     func relativeTimeWithPlural(num :Int) -> String
     {
         let forms = [ "отзыв", "отзыва", "отзывов" ];
