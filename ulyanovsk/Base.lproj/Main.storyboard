@@ -508,6 +508,9 @@
                                     <segment title="Достопримечательности"/>
                                     <segment title="Гостиницы"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentValueChanged:" destination="lG0-VX-dAc" eventType="valueChanged" id="Gbs-4Z-ohK"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

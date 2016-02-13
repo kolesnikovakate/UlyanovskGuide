@@ -23,7 +23,6 @@ class PlaceMapViewController: UIViewController {
         marker.icon = GMSMarker.markerImageWithColor( self.place.isKindOfClass(Hotel.classForCoder()) ? UIColor.blueColor() : UIColor.redColor())
         marker.title = self.place.title
         marker.map = viewMap;
-
     }
 
 }
