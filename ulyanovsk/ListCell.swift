@@ -29,7 +29,7 @@ class ListCell: UITableViewCell {
         self.placeInfoLabel.text = place.info
         self.placeRatingLabel.text = "\(place.rating)"
         self.placeReviewsLabel.text = relativeTimeWithPlural(place.reviews!.count)
-        let url : NSURL = NSURL(string: place.image!)!
+        let url : NSURL = NSURL(string: "http://arcane-brook-20885.herokuapp.com/\(place.image!)")!
         self.placeImageView.sd_setImageWithURL(url, placeholderImage: UIImage(named: "placeholder"))
     }
 

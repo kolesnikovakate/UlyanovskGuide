@@ -12,5 +12,6 @@
 @interface DataMapping : NSObject
 
 + (FEMManagedObjectMapping *)placeMappingForEntityName:(NSString *)entityName;
++ (FEMManagedObjectMapping *)reviewsMapping;
 
 @end

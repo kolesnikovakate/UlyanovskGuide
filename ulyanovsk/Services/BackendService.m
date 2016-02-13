@@ -30,7 +30,7 @@ NSString * const kBackendBaseUrl = @"https://arcane-brook-20885.herokuapp.com";
 {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
-    NSString *endpoint = [NSString stringWithFormat:@"%@/plases", kBackendBaseUrl];
+    NSString *endpoint = [NSString stringWithFormat:@"%@/places", kBackendBaseUrl];
     
     [manager GET:endpoint parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray *_places) {
         [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {

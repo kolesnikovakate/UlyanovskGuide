@@ -17,13 +17,23 @@ class ListViewController: UITableViewController, NSFetchedResultsControllerDeleg
     }
     
     lazy var frc: NSFetchedResultsController = {
-        return Showplace.MR_fetchAllSortedBy(
+        if (self.isShowplace) {
+            return Showplace.MR_fetchAllSortedBy(
+                "title",
+                ascending: true,
+                withPredicate: nil,
+                groupBy: nil,
+                delegate: self
+            )
+        }
+        return Hotel.MR_fetchAllSortedBy(
             "title",
             ascending: true,
             withPredicate: nil,
             groupBy: nil,
             delegate: self
         )
+        
     }()
     
     // MARK: - Table view data source
@@ -50,7 +60,7 @@ class ListViewController: UITableViewController, NSFetchedResultsControllerDeleg
         infoLabel.text = place.info;
         
         let imageView = cell.viewWithTag(3) as! UIImageView
-        imageView.sd_setImageWithURL(NSURL(string: place.image!), placeholderImage: UIImage(named: "placeholder"))
+        imageView.sd_setImageWithURL(NSURL(string: "http://arcane-brook-20885.herokuapp.com/\(place.image!)"), placeholderImage: UIImage(named: "placeholder"))
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

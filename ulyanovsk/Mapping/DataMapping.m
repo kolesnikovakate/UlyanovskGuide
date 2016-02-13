@@ -13,10 +13,11 @@
 + (FEMManagedObjectMapping *)placeMappingForEntityName:(NSString *)entityName
 {
     return [FEMManagedObjectMapping mappingForEntityName:entityName configuration:^(FEMManagedObjectMapping *sender) {
+        [sender setPrimaryKey:@"title"];
         [sender addAttributesFromDictionary:@{@"lat" : @"lat",
                                               @"lon" : @"lon",
                                               @"title" : @"title",
-                                              @"info" : @"info",
+                                              @"info" : @"description",
                                               @"rating": @"rating",
                                               @"image" : @"image"
                                               }];
@@ -27,7 +28,7 @@
 + (FEMManagedObjectMapping *)reviewsMapping
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     [dateFormatter setTimeZone:[NSTimeZone localTimeZone]];
     
     return [FEMManagedObjectMapping mappingForEntityName:@"Review" configuration:^(FEMManagedObjectMapping *sender) {
