@@ -18,7 +18,7 @@
                                               @"title" : @"title",
                                               @"info" : @"info",
                                               @"rating": @"rating",
-                                              @"photos" : @"photos"
+                                              @"image" : @"image"
                                               }];
         [sender addRelationshipMapping:[self reviewsMapping] forProperty:@"reviews" keyPath:@"reviews"];
     }];

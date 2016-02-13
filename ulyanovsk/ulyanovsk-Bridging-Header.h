@@ -4,4 +4,6 @@
 
 #import "UIImageView+WebCache.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import <MagicalRecord/MagicalRecord.h>
 #import "AFNetworking.h"
+#import "BackendService.h"
