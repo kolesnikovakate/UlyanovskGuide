@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		022BDBAB1C5A44FE00540B7B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BDBAA1C5A44FE00540B7B /* MainViewController.swift */; };
+		022BDBAD1C5A451A00540B7B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BDBAC1C5A451A00540B7B /* ListViewController.swift */; };
+		022BDBAF1C5A456100540B7B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BDBAE1C5A456100540B7B /* MapViewController.swift */; };
+		0230E6B71C6F95C500F4D485 /* DetailsViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 02C2F4371C6F939B00B41F8E /* DetailsViewController.h */; };
+		0241A25E1C54E5E2007DC08D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A25D1C54E5E2007DC08D /* AppDelegate.swift */; };
+		0241A2631C54E5E2007DC08D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0241A2611C54E5E2007DC08D /* Main.storyboard */; };
+		0241A2661C54E5E2007DC08D /* ulyanovsk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2641C54E5E2007DC08D /* ulyanovsk.xcdatamodeld */; };
+		0241A2681C54E5E2007DC08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0241A2671C54E5E2007DC08D /* Assets.xcassets */; };
+		0241A26B1C54E5E2007DC08D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0241A2691C54E5E2007DC08D /* LaunchScreen.storyboard */; };
+		0241A2751C56A6D1007DC08D /* ArrayValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2741C56A6D1007DC08D /* ArrayValueTransformer.swift */; };
+		0241A2AB1C56C2FE007DC08D /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2A31C56C2FE007DC08D /* Place+CoreDataProperties.swift */; };
+		0241A2AC1C56C2FE007DC08D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2A41C56C2FE007DC08D /* Place.swift */; };
+		0241A2AD1C56C2FE007DC08D /* Showplace+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2A51C56C2FE007DC08D /* Showplace+CoreDataProperties.swift */; };
+		0241A2AE1C56C2FE007DC08D /* Showplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2A61C56C2FE007DC08D /* Showplace.swift */; };
+		0241A2AF1C56C2FE007DC08D /* Hotel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2A71C56C2FE007DC08D /* Hotel+CoreDataProperties.swift */; };
+		0241A2B01C56C2FE007DC08D /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2A81C56C2FE007DC08D /* Hotel.swift */; };
+		0241A2B11C56C2FE007DC08D /* Review+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2A91C56C2FE007DC08D /* Review+CoreDataProperties.swift */; };
+		0241A2B21C56C2FE007DC08D /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2AA1C56C2FE007DC08D /* Review.swift */; };
+		0262D1371C6F55F50099FE92 /* BackendService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262D1361C6F55F50099FE92 /* BackendService.m */; };
+		0262D1381C6F5A700099FE92 /* BackendService.h in Sources */ = {isa = PBXBuildFile; fileRef = 0262D1351C6F55F50099FE92 /* BackendService.h */; };
+		02C1265C1C6FB92D0052FFEA /* PlaceMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C1265B1C6FB92D0052FFEA /* PlaceMapViewController.swift */; };
+		02C1265F1C6FD4130052FFEA /* ReviewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C1265E1C6FD4130052FFEA /* ReviewsViewController.m */; };
+		02C126611C6FE0970052FFEA /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C126601C6FE0970052FFEA /* ListCell.swift */; };
+		02C126641C6FE0DE0052FFEA /* DataMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C126631C6FE0DE0052FFEA /* DataMapping.m */; };
+		02C2F4391C6F939B00B41F8E /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C2F4381C6F939B00B41F8E /* DetailsViewController.m */; };
+		C0B8F69045AAF39B9EB8AA6D /* libPods-ulyanovsk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E01C107E466BB21FE33CE225 /* libPods-ulyanovsk.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		022BDBAA1C5A44FE00540B7B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = MVC/Controllers/MainViewController.swift; sourceTree = "<group>"; };
+		022BDBAC1C5A451A00540B7B /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = MVC/Controllers/ListViewController.swift; sourceTree = "<group>"; };
+		022BDBAE1C5A456100540B7B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = MVC/Controllers/MapViewController.swift; sourceTree = "<group>"; };
+		0241A25A1C54E5E2007DC08D /* ulyanovsk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ulyanovsk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0241A25D1C54E5E2007DC08D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0241A2621C54E5E2007DC08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0241A2651C54E5E2007DC08D /* ulyanovsk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ulyanovsk.xcdatamodel; sourceTree = "<group>"; };
+		0241A2671C54E5E2007DC08D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0241A26A1C54E5E2007DC08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0241A26C1C54E5E2007DC08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0241A2741C56A6D1007DC08D /* ArrayValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayValueTransformer.swift; path = MVC/Models/ArrayValueTransformer.swift; sourceTree = "<group>"; };
+		0241A2A31C56C2FE007DC08D /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Place+CoreDataProperties.swift"; path = "MVC/Models/Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0241A2A41C56C2FE007DC08D /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = MVC/Models/Place.swift; sourceTree = "<group>"; };
+		0241A2A51C56C2FE007DC08D /* Showplace+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Showplace+CoreDataProperties.swift"; path = "MVC/Models/Showplace+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0241A2A61C56C2FE007DC08D /* Showplace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Showplace.swift; path = MVC/Models/Showplace.swift; sourceTree = "<group>"; };
+		0241A2A71C56C2FE007DC08D /* Hotel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Hotel+CoreDataProperties.swift"; path = "MVC/Models/Hotel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0241A2A81C56C2FE007DC08D /* Hotel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hotel.swift; path = MVC/Models/Hotel.swift; sourceTree = "<group>"; };
+		0241A2A91C56C2FE007DC08D /* Review+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Review+CoreDataProperties.swift"; path = "MVC/Models/Review+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0241A2AA1C56C2FE007DC08D /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Review.swift; path = MVC/Models/Review.swift; sourceTree = "<group>"; };
+		0241A2B31C56C3C1007DC08D /* ulyanovsk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ulyanovsk-Bridging-Header.h"; sourceTree = "<group>"; };
+		0262D1351C6F55F50099FE92 /* BackendService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackendService.h; path = Services/BackendService.h; sourceTree = "<group>"; };
+		0262D1361C6F55F50099FE92 /* BackendService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = BackendService.m; path = Services/BackendService.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		02C1265B1C6FB92D0052FFEA /* PlaceMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceMapViewController.swift; path = MVC/Controllers/PlaceMapViewController.swift; sourceTree = "<group>"; };
+		02C1265D1C6FD4130052FFEA /* ReviewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReviewsViewController.h; path = MVC/Controllers/ReviewsViewController.h; sourceTree = "<group>"; };
+		02C1265E1C6FD4130052FFEA /* ReviewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReviewsViewController.m; path = MVC/Controllers/ReviewsViewController.m; sourceTree = "<group>"; };
+		02C126601C6FE0970052FFEA /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCell.swift; path = MVC/Views/ListCell.swift; sourceTree = "<group>"; };
+		02C126621C6FE0DE0052FFEA /* DataMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataMapping.h; path = MVC/Models/Mapping/DataMapping.h; sourceTree = "<group>"; };
+		02C126631C6FE0DE0052FFEA /* DataMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataMapping.m; path = MVC/Models/Mapping/DataMapping.m; sourceTree = "<group>"; };
+		02C2F4371C6F939B00B41F8E /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsViewController.h; path = MVC/Controllers/DetailsViewController.h; sourceTree = "<group>"; };
+		02C2F4381C6F939B00B41F8E /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsViewController.m; path = MVC/Controllers/DetailsViewController.m; sourceTree = "<group>"; };
+		6478210EB548031887974DBF /* Pods-ulyanovsk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ulyanovsk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ulyanovsk/Pods-ulyanovsk.debug.xcconfig"; sourceTree = "<group>"; };
+		729999FE1D0CD0EBA52C372F /* Pods-ulyanovsk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ulyanovsk.release.xcconfig"; path = "Pods/Target Support Files/Pods-ulyanovsk/Pods-ulyanovsk.release.xcconfig"; sourceTree = "<group>"; };
+		E01C107E466BB21FE33CE225 /* libPods-ulyanovsk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ulyanovsk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0241A2571C54E5E2007DC08D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B8F69045AAF39B9EB8AA6D /* libPods-ulyanovsk.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		022BDBA01C5A3F7900540B7B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		022BDBB01C5A6A6F00540B7B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				022BDBB11C5A6A7F00540B7B /* BackendService */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		022BDBB11C5A6A7F00540B7B /* BackendService */ = {
+			isa = PBXGroup;
+			children = (
+				0262D1351C6F55F50099FE92 /* BackendService.h */,
+				0262D1361C6F55F50099FE92 /* BackendService.m */,
+			);
+			name = BackendService;
+			sourceTree = "<group>";
+		};
+		022BDBB41C5A6F9400540B7B /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				02C126621C6FE0DE0052FFEA /* DataMapping.h */,
+				02C126631C6FE0DE0052FFEA /* DataMapping.m */,
+			);
+			name = Mapping;
+			sourceTree = "<group>";
+		};
+		0241A2511C54E5E2007DC08D = {
+			isa = PBXGroup;
+			children = (
+				0241A25C1C54E5E2007DC08D /* ulyanovsk */,
+				0241A25B1C54E5E2007DC08D /* Products */,
+				032615A521693C7CAC12DDA8 /* Pods */,
+				7735304B4F5F047732005010 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0241A25B1C54E5E2007DC08D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0241A25A1C54E5E2007DC08D /* ulyanovsk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0241A25C1C54E5E2007DC08D /* ulyanovsk */ = {
+			isa = PBXGroup;
+			children = (
+				0241A25D1C54E5E2007DC08D /* AppDelegate.swift */,
+				022BDBB01C5A6A6F00540B7B /* Services */,
+				022BDBA01C5A3F7900540B7B /* Libraries */,
+				0241A2721C56A651007DC08D /* MVC */,
+				0241A2611C54E5E2007DC08D /* Main.storyboard */,
+				0241A2671C54E5E2007DC08D /* Assets.xcassets */,
+				0241A26C1C54E5E2007DC08D /* Info.plist */,
+				0241A2B31C56C3C1007DC08D /* ulyanovsk-Bridging-Header.h */,
+			);
+			path = ulyanovsk;
+			sourceTree = "<group>";
+		};
+		0241A2721C56A651007DC08D /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				0241A2761C56A917007DC08D /* Controllers */,
+				0241A28F1C56AE6C007DC08D /* Views */,
+				0241A2731C56A658007DC08D /* Models */,
+			);
+			name = MVC;
+			sourceTree = "<group>";
+		};
+		0241A2731C56A658007DC08D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				022BDBB41C5A6F9400540B7B /* Mapping */,
+				0241A2641C54E5E2007DC08D /* ulyanovsk.xcdatamodeld */,
+				0241A2A31C56C2FE007DC08D /* Place+CoreDataProperties.swift */,
+				0241A2A41C56C2FE007DC08D /* Place.swift */,
+				0241A2A51C56C2FE007DC08D /* Showplace+CoreDataProperties.swift */,
+				0241A2A61C56C2FE007DC08D /* Showplace.swift */,
+				0241A2A71C56C2FE007DC08D /* Hotel+CoreDataProperties.swift */,
+				0241A2A81C56C2FE007DC08D /* Hotel.swift */,
+				0241A2A91C56C2FE007DC08D /* Review+CoreDataProperties.swift */,
+				0241A2AA1C56C2FE007DC08D /* Review.swift */,
+				0241A2741C56A6D1007DC08D /* ArrayValueTransformer.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0241A2761C56A917007DC08D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				022BDBAA1C5A44FE00540B7B /* MainViewController.swift */,
+				022BDBAC1C5A451A00540B7B /* ListViewController.swift */,
+				02C2F4371C6F939B00B41F8E /* DetailsViewController.h */,
+				02C2F4381C6F939B00B41F8E /* DetailsViewController.m */,
+				022BDBAE1C5A456100540B7B /* MapViewController.swift */,
+				02C1265B1C6FB92D0052FFEA /* PlaceMapViewController.swift */,
+				02C1265D1C6FD4130052FFEA /* ReviewsViewController.h */,
+				02C1265E1C6FD4130052FFEA /* ReviewsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0241A28F1C56AE6C007DC08D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0241A2901C56BF44007DC08D /* Cells */,
+				0241A2691C54E5E2007DC08D /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0241A2901C56BF44007DC08D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				02C126601C6FE0970052FFEA /* ListCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		032615A521693C7CAC12DDA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6478210EB548031887974DBF /* Pods-ulyanovsk.debug.xcconfig */,
+				729999FE1D0CD0EBA52C372F /* Pods-ulyanovsk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7735304B4F5F047732005010 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E01C107E466BB21FE33CE225 /* libPods-ulyanovsk.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0241A2591C54E5E2007DC08D /* ulyanovsk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0241A26F1C54E5E2007DC08D /* Build configuration list for PBXNativeTarget "ulyanovsk" */;
+			buildPhases = (
+				2F84CCC53C6886AE843CD40A /* Check Pods Manifest.lock */,
+				0241A2561C54E5E2007DC08D /* Sources */,
+				0241A2571C54E5E2007DC08D /* Frameworks */,
+				0241A2581C54E5E2007DC08D /* Resources */,
+				42D1D4353E5BDD8A7A110956 /* Embed Pods Frameworks */,
+				48E510D2CD9861C663392053 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ulyanovsk;
+			productName = ulyanovsk;
+			productReference = 0241A25A1C54E5E2007DC08D /* ulyanovsk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0241A2521C54E5E2007DC08D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Ekaterina Kolesnikova";
+				TargetAttributes = {
+					0241A2591C54E5E2007DC08D = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 0241A2551C54E5E2007DC08D /* Build configuration list for PBXProject "ulyanovsk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0241A2511C54E5E2007DC08D;
+			productRefGroup = 0241A25B1C54E5E2007DC08D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0241A2591C54E5E2007DC08D /* ulyanovsk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0241A2581C54E5E2007DC08D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0241A26B1C54E5E2007DC08D /* LaunchScreen.storyboard in Resources */,
+				0241A2681C54E5E2007DC08D /* Assets.xcassets in Resources */,
+				0241A2631C54E5E2007DC08D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F84CCC53C6886AE843CD40A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		42D1D4353E5BDD8A7A110956 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ulyanovsk/Pods-ulyanovsk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48E510D2CD9861C663392053 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ulyanovsk/Pods-ulyanovsk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0241A2561C54E5E2007DC08D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0230E6B71C6F95C500F4D485 /* DetailsViewController.h in Sources */,
+				0262D1381C6F5A700099FE92 /* BackendService.h in Sources */,
+				02C1265F1C6FD4130052FFEA /* ReviewsViewController.m in Sources */,
+				0241A2AB1C56C2FE007DC08D /* Place+CoreDataProperties.swift in Sources */,
+				0241A2AE1C56C2FE007DC08D /* Showplace.swift in Sources */,
+				0241A2AF1C56C2FE007DC08D /* Hotel+CoreDataProperties.swift in Sources */,
+				0241A2751C56A6D1007DC08D /* ArrayValueTransformer.swift in Sources */,
+				0262D1371C6F55F50099FE92 /* BackendService.m in Sources */,
+				02C126641C6FE0DE0052FFEA /* DataMapping.m in Sources */,
+				02C1265C1C6FB92D0052FFEA /* PlaceMapViewController.swift in Sources */,
+				0241A2661C54E5E2007DC08D /* ulyanovsk.xcdatamodeld in Sources */,
+				0241A2B11C56C2FE007DC08D /* Review+CoreDataProperties.swift in Sources */,
+				0241A2B21C56C2FE007DC08D /* Review.swift in Sources */,
+				022BDBAB1C5A44FE00540B7B /* MainViewController.swift in Sources */,
+				02C126611C6FE0970052FFEA /* ListCell.swift in Sources */,
+				02C2F4391C6F939B00B41F8E /* DetailsViewController.m in Sources */,
+				0241A2AC1C56C2FE007DC08D /* Place.swift in Sources */,
+				0241A2AD1C56C2FE007DC08D /* Showplace+CoreDataProperties.swift in Sources */,
+				0241A25E1C54E5E2007DC08D /* AppDelegate.swift in Sources */,
+				0241A2B01C56C2FE007DC08D /* Hotel.swift in Sources */,
+				022BDBAD1C5A451A00540B7B /* ListViewController.swift in Sources */,
+				022BDBAF1C5A456100540B7B /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0241A2611C54E5E2007DC08D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0241A2621C54E5E2007DC08D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0241A2691C54E5E2007DC08D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0241A26A1C54E5E2007DC08D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0241A26D1C54E5E2007DC08D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0241A26E1C54E5E2007DC08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0241A2701C54E5E2007DC08D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6478210EB548031887974DBF /* Pods-ulyanovsk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ulyanovsk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkate.ulyanovsk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ulyanovsk/ulyanovsk-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0241A2711C54E5E2007DC08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729999FE1D0CD0EBA52C372F /* Pods-ulyanovsk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ulyanovsk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkate.ulyanovsk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ulyanovsk/ulyanovsk-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0241A2551C54E5E2007DC08D /* Build configuration list for PBXProject "ulyanovsk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0241A26D1C54E5E2007DC08D /* Debug */,
+				0241A26E1C54E5E2007DC08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0241A26F1C54E5E2007DC08D /* Build configuration list for PBXNativeTarget "ulyanovsk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0241A2701C54E5E2007DC08D /* Debug */,
+				0241A2711C54E5E2007DC08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0241A2641C54E5E2007DC08D /* ulyanovsk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0241A2651C54E5E2007DC08D /* ulyanovsk.xcdatamodel */,
+			);
+			currentVersion = 0241A2651C54E5E2007DC08D /* ulyanovsk.xcdatamodel */;
+			path = ulyanovsk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0241A2521C54E5E2007DC08D /* Project object */;
+}
