@@ -8,3 +8,4 @@
 #import "AFNetworking.h"
 #import "BackendService.h"
 #import "DetailsViewController.h"
+#import "SVProgressHUD.h"

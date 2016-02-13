@@ -22,6 +22,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];
     self.title = self.place.title;
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://arcane-brook-20885.herokuapp.com/%@", self.place.image]]
                       placeholderImage:[UIImage imageNamed:@"placeholder"]];

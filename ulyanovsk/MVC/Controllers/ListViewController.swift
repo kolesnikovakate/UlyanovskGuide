@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+class ListViewController: UITableViewController {
 
     var isShowplace: Bool = true
     
@@ -25,7 +25,7 @@ class ListViewController: UITableViewController, NSFetchedResultsControllerDeleg
                 ascending: true,
                 withPredicate: nil,
                 groupBy: nil,
-                delegate: self
+                delegate: nil
             )
         }
         return Hotel.MR_fetchAllSortedBy(
@@ -33,7 +33,7 @@ class ListViewController: UITableViewController, NSFetchedResultsControllerDeleg
             ascending: true,
             withPredicate: nil,
             groupBy: nil,
-            delegate: self
+            delegate: nil
         )
         
     }()

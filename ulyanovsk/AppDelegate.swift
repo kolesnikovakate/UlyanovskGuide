@@ -38,8 +38,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
-        BackendService.sharedService().getShowplacesWithCallback { (error) -> Void in }
-        BackendService.sharedService().getHotelsWithCallback { (error) -> Void in }
+        SVProgressHUD.showWithMaskType(SVProgressHUDMaskType.Black)
+        BackendService.sharedService().getShowplacesWithCallback { (error) -> Void in
+            SVProgressHUD.dismiss()
+        }
+        BackendService.sharedService().getHotelsWithCallback { (error) -> Void in
+            SVProgressHUD.dismiss()
+        }
     }
 
     func applicationWillTerminate(application: UIApplication) {
