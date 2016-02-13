@@ -30,6 +30,7 @@
 		0241A2B21C56C2FE007DC08D /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2AA1C56C2FE007DC08D /* Review.swift */; };
 		0262D1371C6F55F50099FE92 /* BackendService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262D1361C6F55F50099FE92 /* BackendService.m */; };
 		0262D1381C6F5A700099FE92 /* BackendService.h in Sources */ = {isa = PBXBuildFile; fileRef = 0262D1351C6F55F50099FE92 /* BackendService.h */; };
+		02C1265C1C6FB92D0052FFEA /* PlaceMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C1265B1C6FB92D0052FFEA /* PlaceMapViewController.swift */; };
 		02C2F4391C6F939B00B41F8E /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C2F4381C6F939B00B41F8E /* DetailsViewController.m */; };
 		C0B8F69045AAF39B9EB8AA6D /* libPods-ulyanovsk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E01C107E466BB21FE33CE225 /* libPods-ulyanovsk.a */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		0241A2B31C56C3C1007DC08D /* ulyanovsk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ulyanovsk-Bridging-Header.h"; sourceTree = "<group>"; };
 		0262D1351C6F55F50099FE92 /* BackendService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackendService.h; path = Services/BackendService.h; sourceTree = "<group>"; };
 		0262D1361C6F55F50099FE92 /* BackendService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = BackendService.m; path = Services/BackendService.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		02C1265B1C6FB92D0052FFEA /* PlaceMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceMapViewController.swift; path = MVC/Controllers/PlaceMapViewController.swift; sourceTree = "<group>"; };
 		02C2F4371C6F939B00B41F8E /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsViewController.h; path = MVC/Controllers/DetailsViewController.h; sourceTree = "<group>"; };
 		02C2F4381C6F939B00B41F8E /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsViewController.m; path = MVC/Controllers/DetailsViewController.m; sourceTree = "<group>"; };
 		6478210EB548031887974DBF /* Pods-ulyanovsk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ulyanovsk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ulyanovsk/Pods-ulyanovsk.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				02C2F4371C6F939B00B41F8E /* DetailsViewController.h */,
 				02C2F4381C6F939B00B41F8E /* DetailsViewController.m */,
 				022BDBAE1C5A456100540B7B /* MapViewController.swift */,
+				02C1265B1C6FB92D0052FFEA /* PlaceMapViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				0241A2AF1C56C2FE007DC08D /* Hotel+CoreDataProperties.swift in Sources */,
 				0241A2751C56A6D1007DC08D /* ArrayValueTransformer.swift in Sources */,
 				0262D1371C6F55F50099FE92 /* BackendService.m in Sources */,
+				02C1265C1C6FB92D0052FFEA /* PlaceMapViewController.swift in Sources */,
 				0241A2661C54E5E2007DC08D /* ulyanovsk.xcdatamodeld in Sources */,
 				0241A2B11C56C2FE007DC08D /* Review+CoreDataProperties.swift in Sources */,
 				0241A2B21C56C2FE007DC08D /* Review.swift in Sources */,

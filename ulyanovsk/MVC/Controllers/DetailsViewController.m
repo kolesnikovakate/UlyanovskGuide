@@ -37,12 +37,12 @@
     [self.view layoutIfNeeded];
 }
 
-- (IBAction)showMap:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-}
-
-- (IBAction)showReviews:(id)sender
-{
+    UIViewController *vc = segue.destinationViewController;
+    if ([vc respondsToSelector:@selector(setPlace:)]) {
+        [vc performSelector:@selector(setPlace:) withObject:self.place];
+    }
 }
 
 @end

@@ -14,8 +14,8 @@
 {
     return [FEMManagedObjectMapping mappingForEntityName:entityName configuration:^(FEMManagedObjectMapping *sender) {
         [sender setPrimaryKey:@"title"];
-        [sender addAttributesFromDictionary:@{@"lat" : @"lat",
-                                              @"lon" : @"lon",
+        [sender addAttributesFromDictionary:@{@"lat" : @"latitude",
+                                              @"lon" : @"longitude",
                                               @"title" : @"title",
                                               @"info" : @"description",
                                               @"rating": @"rating",

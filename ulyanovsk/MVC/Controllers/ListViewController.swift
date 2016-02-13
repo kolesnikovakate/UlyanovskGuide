@@ -66,7 +66,7 @@ class ListViewController: UITableViewController, NSFetchedResultsControllerDeleg
         
         
         let ratingLabel = cell.viewWithTag(4) as! UILabel
-        let rating = Int(arc4random_uniform(UInt32(10 + 1)))
+        let rating = Float(arc4random_uniform(UInt32(10 + 1))) + Float(arc4random_uniform(UInt32(10 + 1)))/10
         ratingLabel.text = "\(rating)";
         
         let reviewsLabel = cell.viewWithTag(5) as! UILabel

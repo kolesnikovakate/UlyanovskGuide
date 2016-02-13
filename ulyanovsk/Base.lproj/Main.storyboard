@@ -648,9 +648,6 @@
                                                         <include reference="wjv-Zh-x4V"/>
                                                     </mask>
                                                 </variation>
-                                                <connections>
-                                                    <action selector="showReviews:" destination="643-qI-tOp" eventType="touchUpInside" id="YqK-my-MML"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwx-VY-4g1">
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -673,7 +670,7 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="showMap:" destination="643-qI-tOp" eventType="touchUpInside" id="sAV-wU-gF4"/>
+                                                    <segue destination="X6z-yC-clL" kind="show" identifier="openPlaceNapVC" id="swW-60-bKv"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -820,6 +817,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKf-gy-YyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2760" y="387"/>
+        </scene>
+        <!--Place Map View Controller-->
+        <scene sceneID="Igt-qf-ovQ">
+            <objects>
+                <viewController id="X6z-yC-clL" customClass="PlaceMapViewController" customModule="ulyanovsk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hVe-Sw-IdZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="CeR-Ri-N3i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pzq-pr-Bio">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aD-yo-JSD" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5aD-yo-JSD" firstAttribute="top" secondItem="hVe-Sw-IdZ" secondAttribute="bottom" id="Phz-RD-JpI"/>
+                            <constraint firstItem="5aD-yo-JSD" firstAttribute="leading" secondItem="Pzq-pr-Bio" secondAttribute="leading" id="Rt8-wa-NOy"/>
+                            <constraint firstItem="CeR-Ri-N3i" firstAttribute="top" secondItem="5aD-yo-JSD" secondAttribute="bottom" id="dFY-lo-Bk7"/>
+                            <constraint firstAttribute="trailing" secondItem="5aD-yo-JSD" secondAttribute="trailing" id="uL1-8a-ugj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="5aD-yo-JSD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="dFY-lo-Bk7"/>
+                                <exclude reference="Phz-RD-JpI"/>
+                                <exclude reference="Rt8-wa-NOy"/>
+                                <exclude reference="uL1-8a-ugj"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="5aD-yo-JSD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="dFY-lo-Bk7"/>
+                                <include reference="Phz-RD-JpI"/>
+                                <include reference="Rt8-wa-NOy"/>
+                                <include reference="uL1-8a-ugj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="viewMap" destination="5aD-yo-JSD" id="mwB-xB-qi8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGS-AI-kO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3463.5" y="387"/>
         </scene>
     </scenes>
     <resources>
