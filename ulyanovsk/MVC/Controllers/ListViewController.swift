@@ -62,7 +62,7 @@ class ListViewController: UITableViewController {
         infoLabel.text = place.info;
         
         let imageView = cell.viewWithTag(3) as! UIImageView
-        imageView.sd_setImageWithURL(NSURL(string: "https://arcane-brook-20885.herokuapp.com/\(place.image!)"), placeholderImage: UIImage(named: "placeholder"))
+        imageView.sd_setImageWithURL(NSURL(string: "\(place.image!)"), placeholderImage: UIImage(named: "placeholder"))
         
         
         let ratingLabel = cell.viewWithTag(4) as! UILabel

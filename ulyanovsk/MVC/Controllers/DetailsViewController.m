@@ -24,7 +24,7 @@
     [super viewDidLoad];
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];
     self.title = self.place.title;
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://arcane-brook-20885.herokuapp.com/%@", self.place.image]]
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:self.place.image]
                       placeholderImage:[UIImage imageNamed:@"placeholder"]];
     
     self.titleLabel.text = self.place.title;
@@ -44,6 +44,12 @@
     if ([vc respondsToSelector:@selector(setPlace:)]) {
         [vc performSelector:@selector(setPlace:) withObject:self.place];
     }
+}
+
+- (IBAction)callAction:(id)sender
+{
+    NSString *phoneNumber = @"89001234567";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"telprompt://%@", phoneNumber]]];
 }
 
 @end

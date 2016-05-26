@@ -12,7 +12,6 @@
 		022BDBAF1C5A456100540B7B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BDBAE1C5A456100540B7B /* MapViewController.swift */; };
 		0230E6B71C6F95C500F4D485 /* DetailsViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 02C2F4371C6F939B00B41F8E /* DetailsViewController.h */; };
 		0241A25E1C54E5E2007DC08D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A25D1C54E5E2007DC08D /* AppDelegate.swift */; };
-		0241A2631C54E5E2007DC08D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0241A2611C54E5E2007DC08D /* Main.storyboard */; };
 		0241A2661C54E5E2007DC08D /* ulyanovsk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2641C54E5E2007DC08D /* ulyanovsk.xcdatamodeld */; };
 		0241A2681C54E5E2007DC08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0241A2671C54E5E2007DC08D /* Assets.xcassets */; };
 		0241A26B1C54E5E2007DC08D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0241A2691C54E5E2007DC08D /* LaunchScreen.storyboard */; };
@@ -27,6 +26,9 @@
 		0241A2B21C56C2FE007DC08D /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241A2AA1C56C2FE007DC08D /* Review.swift */; };
 		0262D1371C6F55F50099FE92 /* BackendService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262D1361C6F55F50099FE92 /* BackendService.m */; };
 		0262D1381C6F5A700099FE92 /* BackendService.h in Sources */ = {isa = PBXBuildFile; fileRef = 0262D1351C6F55F50099FE92 /* BackendService.h */; };
+		02757F221CF792DE00DD969B /* AddReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02757F211CF792DE00DD969B /* AddReviewViewController.m */; };
+		02757F261CF7930500DD969B /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02757F251CF7930500DD969B /* UIPlaceHolderTextView.m */; };
+		02757F291CF7937000DD969B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02757F271CF7937000DD969B /* Main.storyboard */; };
 		02C1265C1C6FB92D0052FFEA /* PlaceMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C1265B1C6FB92D0052FFEA /* PlaceMapViewController.swift */; };
 		02C1265F1C6FD4130052FFEA /* ReviewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C1265E1C6FD4130052FFEA /* ReviewsViewController.m */; };
 		02C126611C6FE0970052FFEA /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C126601C6FE0970052FFEA /* ListCell.swift */; };
@@ -41,7 +43,6 @@
 		022BDBAE1C5A456100540B7B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = MVC/Controllers/MapViewController.swift; sourceTree = "<group>"; };
 		0241A25A1C54E5E2007DC08D /* ulyanovsk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ulyanovsk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0241A25D1C54E5E2007DC08D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0241A2621C54E5E2007DC08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0241A2651C54E5E2007DC08D /* ulyanovsk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ulyanovsk.xcdatamodel; sourceTree = "<group>"; };
 		0241A2671C54E5E2007DC08D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0241A26A1C54E5E2007DC08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +59,11 @@
 		0241A2B31C56C3C1007DC08D /* ulyanovsk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ulyanovsk-Bridging-Header.h"; sourceTree = "<group>"; };
 		0262D1351C6F55F50099FE92 /* BackendService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackendService.h; path = Services/BackendService.h; sourceTree = "<group>"; };
 		0262D1361C6F55F50099FE92 /* BackendService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = BackendService.m; path = Services/BackendService.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		02757F201CF792DE00DD969B /* AddReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReviewViewController.h; sourceTree = "<group>"; };
+		02757F211CF792DE00DD969B /* AddReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReviewViewController.m; sourceTree = "<group>"; };
+		02757F241CF7930500DD969B /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
+		02757F251CF7930500DD969B /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
+		02757F281CF7937000DD969B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02C1265B1C6FB92D0052FFEA /* PlaceMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceMapViewController.swift; path = MVC/Controllers/PlaceMapViewController.swift; sourceTree = "<group>"; };
 		02C1265D1C6FD4130052FFEA /* ReviewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReviewsViewController.h; path = MVC/Controllers/ReviewsViewController.h; sourceTree = "<group>"; };
 		02C1265E1C6FD4130052FFEA /* ReviewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReviewsViewController.m; path = MVC/Controllers/ReviewsViewController.m; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 		022BDBA01C5A3F7900540B7B /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				02757F231CF7930500DD969B /* UIPlaceHolderTextView */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -141,7 +148,7 @@
 				022BDBB01C5A6A6F00540B7B /* Services */,
 				022BDBA01C5A3F7900540B7B /* Libraries */,
 				0241A2721C56A651007DC08D /* MVC */,
-				0241A2611C54E5E2007DC08D /* Main.storyboard */,
+				02757F271CF7937000DD969B /* Main.storyboard */,
 				0241A2671C54E5E2007DC08D /* Assets.xcassets */,
 				0241A26C1C54E5E2007DC08D /* Info.plist */,
 				0241A2B31C56C3C1007DC08D /* ulyanovsk-Bridging-Header.h */,
@@ -188,6 +195,8 @@
 				02C1265B1C6FB92D0052FFEA /* PlaceMapViewController.swift */,
 				02C1265D1C6FD4130052FFEA /* ReviewsViewController.h */,
 				02C1265E1C6FD4130052FFEA /* ReviewsViewController.m */,
+				02757F201CF792DE00DD969B /* AddReviewViewController.h */,
+				02757F211CF792DE00DD969B /* AddReviewViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -207,6 +216,15 @@
 				02C126601C6FE0970052FFEA /* ListCell.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		02757F231CF7930500DD969B /* UIPlaceHolderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				02757F241CF7930500DD969B /* UIPlaceHolderTextView.h */,
+				02757F251CF7930500DD969B /* UIPlaceHolderTextView.m */,
+			);
+			path = UIPlaceHolderTextView;
 			sourceTree = "<group>";
 		};
 		032615A521693C7CAC12DDA8 /* Pods */ = {
@@ -287,9 +305,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02757F291CF7937000DD969B /* Main.storyboard in Resources */,
 				0241A26B1C54E5E2007DC08D /* LaunchScreen.storyboard in Resources */,
 				0241A2681C54E5E2007DC08D /* Assets.xcassets in Resources */,
-				0241A2631C54E5E2007DC08D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,9 +381,11 @@
 				0241A2B21C56C2FE007DC08D /* Review.swift in Sources */,
 				022BDBAB1C5A44FE00540B7B /* MainViewController.swift in Sources */,
 				02C126611C6FE0970052FFEA /* ListCell.swift in Sources */,
+				02757F221CF792DE00DD969B /* AddReviewViewController.m in Sources */,
 				02C2F4391C6F939B00B41F8E /* DetailsViewController.m in Sources */,
 				0241A2AC1C56C2FE007DC08D /* Place.swift in Sources */,
 				0241A2AD1C56C2FE007DC08D /* Showplace+CoreDataProperties.swift in Sources */,
+				02757F261CF7930500DD969B /* UIPlaceHolderTextView.m in Sources */,
 				0241A25E1C54E5E2007DC08D /* AppDelegate.swift in Sources */,
 				0241A2B01C56C2FE007DC08D /* Hotel.swift in Sources */,
 				022BDBAD1C5A451A00540B7B /* ListViewController.swift in Sources */,
@@ -376,20 +396,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0241A2611C54E5E2007DC08D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0241A2621C54E5E2007DC08D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0241A2691C54E5E2007DC08D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0241A26A1C54E5E2007DC08D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		02757F271CF7937000DD969B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02757F281CF7937000DD969B /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

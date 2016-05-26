@@ -9,7 +9,7 @@
 #import "ReviewsViewController.h"
 #import "ulyanovsk-Swift.h"
 
-@interface ReviewsViewController ()
+@interface ReviewsViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSArray *reviews;
 
@@ -21,8 +21,14 @@
 {
     [super viewDidLoad];
     self.title = @"Отзывы";
-    self.reviews = [self.place.reviews allObjects];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSSortDescriptor *sortDescriptorDate = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO];
+    self.reviews = [[self.place.reviews allObjects] sortedArrayUsingDescriptors:@[sortDescriptorDate]];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table View
@@ -61,6 +67,16 @@
     [dateFormat setLocale:[NSLocale currentLocale]];
     [dateFormat setDateFormat:@"dd MMMM yyyy"];
     dateLabel.text = [dateFormat stringFromDate:review.date];
+}
+
+#pragma mark
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    UIViewController *vc = segue.destinationViewController;
+    if ([vc respondsToSelector:@selector(setPlace:)]) {
+        [vc performSelector:@selector(setPlace:) withObject:self.place];
+    }
 }
 
 @end

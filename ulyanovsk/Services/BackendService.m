@@ -12,7 +12,7 @@
 #import "DataMapping.h"
 #import "ulyanovsk-Swift.h"
 
-NSString * const kBackendBaseUrl = @"https://arcane-brook-20885.herokuapp.com";
+NSString * const kBackendBaseUrl = @"https://murmuring-sierra-38312.herokuapp.com";
 
 @implementation BackendService
 

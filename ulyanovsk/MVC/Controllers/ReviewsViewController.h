@@ -12,8 +12,9 @@
 
 @class Place;
 
-@interface ReviewsViewController : UITableViewController
+@interface ReviewsViewController : UIViewController
 
 @property (strong, nonatomic) Place *place;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
